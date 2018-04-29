@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bold {
+    font-weight: bold;
+}
+.row {
+    /* set the stylings for each row, regardless of screen size */
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.dkgray {
+    height: 25%;
+    background-color: #888888;
+}
+.gray {
+   height: 50%;
+   background-color: rgb(191, 189, 189);
+}
+.yel {
+    height: 25%;
+    background-color: rgb(227, 227, 117);
+}
+@media only screen and (max-width: 480px) {
+    .md, .lg {
+        display: none;
+     }   
+}
+@media only screen and (min-width: 481px) {
+    .sm, .lg {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .sm, .md {
+        display: none;
+    }
+    .lg {
+        display: block;
+    }
+}
+h1 {
+    font-size: 1.75em;
+}
